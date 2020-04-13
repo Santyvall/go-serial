@@ -16,7 +16,7 @@ func main() {
 
 	defer p.Close()
 
-	buf := make([]byte, 1)
+	buf := make([]byte, 5)
 	if _, err := p.Read(buf); err != nil {
 		log.Panic(err)
 	} else {
